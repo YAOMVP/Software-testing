@@ -418,7 +418,177 @@ For example, I'm testing registration page. What are the scenarios that the user
 
 
 
------------------------------------------------------------
+
+
+
 
 # :three:Test Case Writing
+
+##What is test case？
+
+A set of preconditions, inputs, actions (where applicable), expected results 
+and postconditions, developed based on test conditions.
+
+![1679189407950](README.assets/1679189407950.png)
+
+
+
+### 1.Test Case Title
+
+![1679189558225](README.assets/1679189558225.png)
+
+
+
+### 2.Precondition
+
+**Must be met before testing**
+
+![1679189664252](README.assets/1679189664252.png)
+
+
+
+###3.Test Steps
+
+**The steps that will be required to execute this test case, and these steps must be very clear and informative.**
+
+![1679189761151](README.assets/1679189761151.png)
+
+
+
+### 4.Excepted result
+
+**When the user enters a valid user name, enters a valid password, clicks on sign in. What would happen?**
+
+![1679190284358](README.assets/1679190284358.png)
+
+
+
+### 5.Test Scenarios(Test Suite)
+
+**It will be inside a folder or inside a section which is the module or the test suite which is in this case log in. We can have a test suite which is called log in or we can have more than one test suite, one for Login with Facebook one for log in with gmail, one for log in using username. It depends on the size of the project. If the project is small we can add all the login test cases inside one test suite. If we have a big project we can divide them into more than one test suite.**
+
+![1679190426462](README.assets/1679190426462.png)
+
+
+
+### 6.Test Environment
+
+- The hardware
+
+  What is the device that I will test this test case on?
+
+- The software
+
+  Operation system : windows 10...
+
+- The network
+
+  WI-FI/Mobile data
+
+![1679190611971](README.assets/1679190611971.png)
+
+
+
+### 7.Actual Result
+
+**After executing the test case. You should write the field and leave it empty!**
+
+![1679190872431](README.assets/1679190872431.png)
+
+
+
+### 8.Status
+
+![1679191104233](README.assets/1679191104233.png)
+
+**Blocked/Skipped : Because I am not able to test it. Why I'm not able to test the login functionality ?because it depends on the registration functionality.**
+
+
+
+![1679191149146](README.assets/1679191149146.png)
+
+
+
+
+
+# :100:Test case VS test scenarios
+
+Test cases are derived from test scenarios.
+
+A test scenario is a single statement (description) describing a specific functionality in the application.~测试场景是描述应用程序中特定功能的单个语句（描述）。~
+
+Test cases contain definite a description, test steps, data, and expected results for testing this is specific functionality. ~测试用例包含明确的描述、测试步骤、数据和测试特定功能的预期结果~
+
+
+
+
+
+## Example Sign-up test case
+
+![1679197863703](README.assets/1679197863703.png)
+
+![1679197910929](README.assets/1679197910929.png)
+
+
+
+## Invalid scenarios
+
+###what are invalid test cases?
+
+==These are the test cases that include an error or a mistake. So the user made a mistake in using the software.==
+
+- For example you can click on sign up without choosing admin or project owner.
+- You can click and sign up without entering a username or without entering an email or without entering a password.
+
+### Invalid username
+
+#### 1.only one character
+
+#### 2.Already used username 
+
+#### 3.long username
+
+#### 4.empty username
+
+#### 5.localization different language.
+
+![1679199781468](README.assets/1679199781468.png)
+
+
+
+
+
+### Invalid email
+
+####1.Already used email
+
+#### 2.Empty email
+
+#### 3.Wrong email format
+
+#### 4.Already registered but not verify
+
+#### 5.Email is attached with Facebook
+
+####6.Email is attached with Gmail
+
+![1679202380475](README.assets/1679202380475.png)
+
+
+
+
+
+###Invalid password
+
+#### 1.Empty password
+
+#### 2.Less than 6 characters
+
+#### 3.Not contain numbers (alphanumeric)
+
+####4.Not contain special character
+
+####5.Not begin with a capital letter
+
+![1679203400302](README.assets/1679203400302.png)
 
