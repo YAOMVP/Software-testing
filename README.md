@@ -330,7 +330,7 @@ So in this case I will test the login functionality. I will also test edit profi
 
 When the developer changes a feature should we test the whole application? Sometimes we don't have time to do this so what shall we do?
 
-==The most basic functionalities are in the software. The result of this testing is used to decide if a build is stable enough to proceed with further testing.==
+==The most basic functionalities are in the software. The result of this testing is used to decide is stable enough to proceed with further testing.==
 
 Before beginning our test cases we perform the smoke testing. If the smoke testing passes, then we can perform functional testing, non-functional testing and all other types of testing. If this testing fails then we return the build to the developer.
 
@@ -591,4 +591,96 @@ Test cases contain definite a description, test steps, data, and expected result
 ####5.Not begin with a capital letter
 
 ![1679203400302](README.assets/1679203400302.png)
+
+
+
+
+
+
+
+------------
+
+
+
+# Test case writing  Zephyr Scale
+
+##Sign up 
+
+![1679298626356](README.assets/1679298626356.png)
+
+
+
+![1679299669179](README.assets/1679299669179.png)
+
+
+
+
+
+##Login
+
+![1679299428587](README.assets/1679299428587.png)
+
+
+
+![1679299645178](README.assets/1679299645178.png)
+
+
+
+## Forgot Password
+
+![1679299732362](README.assets/1679299732362.png)
+
+
+
+![1679299889184](README.assets/1679299889184.png)
+
+
+
+## Settings
+
+![1679299950300](README.assets/1679299950300.png)
+
+![1679299985230](README.assets/1679299985230.png)
+
+
+
+![1679300354156](README.assets/1679300354156.png)
+
+
+
+## Card & Cash
+
+![1679300454831](README.assets/1679300454831.png)
+
+![1679300701581](README.assets/1679300701581.png)
+
+
+
+![1679300922737](README.assets/1679300922737.png)
+
+
+
+## statistics
+
+![1679300960350](README.assets/1679300960350.png)
+
+
+
+![1679301158260](README.assets/1679301158260.png)
+
+
+
+## Savings
+
+![1679301238262](README.assets/1679301238262.png)
+
+![1679301252363](README.assets/1679301252363.png)
+
+
+
+![1679301317192](README.assets/1679301317192.png)
+
+
+
+![1679301619141](README.assets/1679301619141.png)
 
