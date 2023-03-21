@@ -684,3 +684,270 @@ Test cases contain definite a description, test steps, data, and expected result
 
 ![1679301619141](README.assets/1679301619141.png)
 
+
+
+-----
+
+
+
+# Bug Report
+
+Documentation of the occurrence, nature, and status of a defect. ~记录缺陷的发生、性质和状态。~
+
+
+
+#What is a defect?
+
+An imperfection or deficiency in a work product where it does not meet its  
+
+requirements or specifications.
+
+
+
+
+
+## 1.Bug Report Title
+
+![1679360387668](README.assets/1679360387668.png)
+
+
+
+
+
+##2.Steps to reproduce
+
+![1679360414211](README.assets/1679360414211.png)
+
+
+
+## 3.Expected Result
+
+When I perform the last step what should happen.
+
+![1679360517926](README.assets/1679360517926.png)
+
+
+
+## 4.Actual Result
+
+![1679360568916](README.assets/1679360568916.png)
+
+
+
+##5.Test Environment
+
+![1679360593309](README.assets/1679360593309.png)
+
+
+
+##6.Screenshot or Video
+
+![1679360623134](README.assets/1679360623134.png)
+
+
+
+## 7.Bug Priority
+
+![1679360653193](README.assets/1679360653193.png)
+
+
+
+
+
+#Defects’ Types
+
+## 1.Functional
+
+There is a functionality in th e application is not working.
+
+Forgot password functionality isn't working.
+
+![1679361681949](README.assets/1679361681949.png)
+
+
+
+## 2.Visual(UI)
+
+![1679361989526](README.assets/1679361989526.png)
+
+
+
+## 3.Content
+
+![1679362026879](README.assets/1679362026879.png)
+
+
+
+## 4.Performance
+
+![1679362043815](README.assets/1679362043815.png)
+
+
+
+## 5.Suggestion
+
+![1679362058419](README.assets/1679362058419.png)
+
+
+
+
+
+##Example Defect Report
+
+![1679362333696](README.assets/1679362333696.png)
+
+
+
+------------
+
+# Test Reports
+
+## Test Progress report
+
+*A type of test report produced at ==regular intervals== about the progress of test activities against a baseline, risks, and alternatives requiring a decision. Synonyms: test status report.~定期生成的一种测试报告，内容涉及针对基线、风险和需要决策的备选方案的测试活动进度。同义词：测试状态报告。*~
+
+**For example: We have a project that will take 6 months. We can write a report each week. We give the stakeholders feedback on the quality of the software.**
+
+
+
+## Test summary report
+
+*A type of test report produced at ==completion milestones== that provides an evaluation of the corresponding test items against exit criteria.~在完成里程碑时生成的一种测试报告，根据退出标准对相应的测试项目进行评估。*~
+
+**If we finish performance testing, we can produce a test summary report.**
+
+
+
+----------
+
+
+
+# interview Questions
+
+*A mistake in coding is called Error, error found by tester is called Defect, defect accepted by development team then it is called Bug, build does not meet the requirements then it Is Failure.~编码中的错误称为Error，测试人员发现的错误称为Defect，开发团队接受的缺陷称为Bug，构建不符合要求称为Failure。~*
+
+
+
+
+
+##:100:Difference between SDLC & STLC
+
+###Software Development Life Cycle (**SDLC**)
+
+The steps that we go through in order to ==develop== software.
+
+we have two types of software development lifecycle.We have sequential life cycles like the waterfall *(The development activities are completed one after another.)* and the V model*(Integrates the test process throughout the development process, implementing~贯彻~ the principle of early testing)*. We have interative~重复的~ and incremental life cycles*( we gather its requirements. We design it, we develop it, and we test it. Then we move to the next section)*like agile scrum kanban RUP.
+
+### Software Testing Life Cycle(STLC)
+
+The steps that we go through in order to ==test== the software.
+
+we begin by planning the testing plan, then designing our test cases then executing them, reporting the status of our project to the stakeholders.
+
+
+
+![1679376022067](README.assets/1679376022067.png)
+
+**Software development life cycle**
+
+We gather the requirements, analyze them, design the software, write our code, test our code, then deploy the software.
+
+The testing step of the software development lifecycle ==is== the **Software testing life cycle**.
+
+On testing life cycle here, we find requirements analysis, test planning, design, environment set up or test implementation execution and then test closure activity.
+
+
+
+##:100:Different levels of software testing
+
+We have 4 main level.**Unit testing, integration testing, system testing and acceptance testing.**
+
+- Unit Testing: It is the lowest level of testing. It is used to verify that each individual piece of code functions as designed. like this code is composed of classes of code. Each of them can be considered as a unit that can be tested separately. Most of the time it is done by developers. 
+- Integration testing:  One piece of software can contain several modules which are created by several different programmers. It is crucial to test each module’s effect on the entire program model. When we check login and sign up features in an e-commerce app, we view them as separate units. Most of the time it is done by developers. 
+- System testing: completed software product in order to ensure that the overall product meets the requirements specified, done by Testers.
+- Acceptance testing: acceptance testing is like system testing.The goal of acceptance testing is not to find many defects. But the goal is to make sure that the software is ready to be deployed to the customer. Mostly the end users and the stakeholders are the ones who perform acceptance testing.
+
+##:100:Component integration testing VS System integration testing
+
+*Component integration testing* When components are written by multiple developers working independently of each other, the component integration test usually takes place as a part of the continuous integration process or in a specific integration environment. ~当组件由多个彼此独立工作的开发人员编写时，组件集成测试通常作为持续集成过程的一部分或在特定的集成环境中进行。~
+
+*Systems integration testing* has a more comprehensive scope. Systems integration testing focuses not only on all of the workflows through the application, but also on the integrations and interactions with other applications.Especially the end-to-end test,  tests an application’s workflow from beginning to end.~系统集成测试的范围更广。系统集成测试不仅关注通过应用程序的所有工作流，还关注与其他应用程序的集成和交互。尤其是端到端测试。~
+
+
+
+##:100:Steps defect discovery resolution
+
+Explain the steps that the defect goes through from discovery to resolution.~解释缺陷从发现到解决所经历的步骤。~
+
+![1679381745694](README.assets/1679381745694.png)
+
+
+
+The purpose of Defect life cycle is to make the defect fixing process systematic~有规则的~ and efficient.
+
+- **New:** When a new defect is logged and posted for the first time. It is assigned a status as NEW. 
+- **Assigned:** Once the bug is posted by the tester, the lead of the tester approves the bug and assigns the bug to the developer team.
+- **Open**: The developer starts analyzing and works on the defect.
+- **Fixed**: When a developer makes a necessary code change and verifies the change, he or she can make bug status as “Fixed.”
+- **Pending retest**: Once the bug is fixed, the developer gives a particular code for retesting the code to the tester, the status assigned is “pending retest.”
+- **Retest**: Tester does the retesting of the code at this stage to check whether the defect is fixed by the developer or not and changes the status to “Re-test.”
+
+- **Verified**: The tester re-tests. If there is no defects detected in the software, then the bug is fixed and the status assigned is “verified.”
+- **Reopen**: If the defect persists even after the developer has fixed the bug, the tester changes the status to “reopened”. 
+- **Closed**: If the defect is no longer exists then tester assigns the status “Closed.” 
+- **Duplicate**: If the defect is repeated twice or the defect corresponds to the same concept of the bug, the status is changed to “duplicate.”
+- **Rejected**: If the developer feels the defect is not a genuine defect then it changes the defect to “rejected.”
+- **Deferred**~延期~: If the present bug is not of a prime priority and if it is expected to get fixed in the next release, then status “Deferred” is assigned to such bugs
+- **Not a bug**: If it does not affect the functionality of the application then the status assigned to a bug is “Not a bug”.
+
+
+
+
+
+1. Tester finds the defect
+2. Status assigned to defect- New
+3. A defect is forwarded to Project Manager for analyze
+4. Project Manager decides whether a defect is valid
+5. Here the defect is not valid- a status is given “Rejected.”
+6. So, project manager assigns a status **rejected**. If the defect is not rejected then the next step is to check whether it is in scope. Suppose we have another function- email functionality for the same application, and you find a problem with that. But it is not a part of the current release when such defects are assigned as a **postponed or deferred** status.
+7. Next, the manager verifies whether a similar defect was raised earlier. If yes defect is assigned a status **duplicate**.
+8. If no the defect is assigned to the developer who starts fixing the code. During this stage, the defect is assigned a status **in- progress.**
+9. Once the code is fixed. A defect is assigned a status **fixed**
+10. Next, the tester will re-test the code. In case, the Test Case the defect is **closed.** If the test cases fail again, the defect is **re-opened** and assigned to the developer.
+11. Consider a situation where during the 1st release of Flight Reservation a defect was found in Fax order that was fixed and assigned a status closed. During the second upgrade release the same defect again re-surfaced. In such cases, a closed defect will be **re-opened.**
+
+
+
+##:100:Test case and test scenario
+
+Test scenarios: A single statement describing a specific functionality. For example if we want to test the login functionality. We want to test the registration functionality. Sometimes just one phrase or one sentence
+
+Test case: Are derived from test scenarios. Mostly is a document. Test cases contain definite desctiption.
+
+1. Test case Title
+2. Precondition (Must be met before testing)
+3. Test steps (The steps will be required to execute the test case)
+4. Excepted result
+5. Test scenarios
+6. Test environment
+7. Actual result (Leave it empty)
+8. Status
+
+
+
+## :100:Functional VS Non-functional Testing (Testing type)
+
+- Functional testing: Test the main functions of the software. For example, test the login functionality, does it work like expected or not?
+- Non-functional testing: Like How does the system perform, we can not answer it with yes or no question. For example, we have the login functionaluty, is the response time of this functionality good? Is the user interface appealing enough? We may test the performance of the system when 100 users login simultaneously, we can not answer it with yes/no, The response time of the system is 3 seconds, we may say good for normal website, but for a gaming website, it will be a disaster. So that's why we can not say it with yes/no.
+
+
+
+##:100:Validation & Verification
+
+- Validation: are we building the right product? Did we build the product in a way that ==satisfied== the customer's requirement or not. Validated by executing the software code. May use Smoke testing, regression testing and so on.
+
+  
+
+- Verification: are we building the product right? We verify the work product like the
+
+  entity relationship diagrams, the testing plan and the traceability matrix. From the developer point of view, it is verified without executing the code. So we are performing a static analysis.
