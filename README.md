@@ -951,3 +951,186 @@ Test case: Are derived from test scenarios. Mostly is a document. Test cases con
 - Verification: are we building the product right? We verify the work product like the
 
   entity relationship diagrams, the testing plan and the traceability matrix. From the developer point of view, it is verified without executing the code. So we are performing a static analysis.
+
+
+
+##:100:When should we start testing in our project?
+
+**How can we prevent defects from being introduced in our project?**
+
+Starting test as early as possible, this helps to reduce the number of defects and the rework cost in the end. Early testing saves time and money. When you review the requirements and the design, if there is any problem, you will prevent this problem from being introduced in the project.
+
+
+
+##:100:Don't have clear written user requirements, how can we test the software?
+
+- If there is a requirements document / UI design / User stories , I will try to gather them and understand them in order to analyze the requirements and write the test cases.
+- Talk to the project team members, or the developer who worked on this project in the past, they may help me getting some data.
+- Use exploratory testing to test the application.
+  -  :arrow_down_small:
+
+
+
+##:100:What is exploratory testing, why do we use it?
+
+So exploratory testing is an experience based test technique. In our testing process, we begin to learn about software, write test plan and then analyze it, then execute them, but sometimes we ==don't have requirements to analyze==, we ==don't have enough time== to test our software,we use exploratory testing.
+
+When someone needs to learn about a product or application quickly and provide rapid feedback. It helps review the quality of a product from a user perspective.  
+
+
+
+##:100:A defect which could have been removed during the initial stage is removed in a later stage. How does this affect the cost?
+
+If we find a defect in requirements, in design, or even in coding, it will not cost a lot.If we find it in testing, it will relatively cheaper to fix it. But if we find it in operation, OK, this means that the customer or the client found the defect after we delivered it to him. In this case, this is a very big problem.
+
+One of the seven principles of testing states that early testing saves time and money.
+
+
+
+##:100:What is change-related testing?
+
+It is a type of testing that is performed after a change is happened to the software.~这是一种在软件发生更改后执行的测试。~
+
+That will require two types of testing, confirmation testing(retesting) and regression testing. 
+
+Confirmation testing: After the developer fixes this defect, the tester will check whether the defect is fixed or not. Regression testing: We test the parts that were not changed.
+
+
+
+##:100:black-box white-box grey-box testing
+
+- Black-box testing:  it is a software testing mthod, test without looking at the internal structure of the software. For example, If I am testing this mobile phone using black box testing, I will provide input to the mobile phone and I will wait for output. I don't know anything about the internal structure of it. I'm using it as a user, as an experienced user.
+
+- White-box testing:it is a software testing mthod, test will look at the internal structure of the software. I will open the mobile and see what is happening to the input that I am providing.
+
+**If I am reviewing the code, Is this white box testing or black box testing ?**
+
+Reviewing the code is static testing, black box testing and white box testing are dynamic testing. (We are providing input and waiting for output. So white box testing is dynamic testing.)
+
+- Grey-box testing: It is a software technique to test a software product. That mixes white box and black box testing. If I am opening a page in a website and this page doesn't show up, I am performing black-box testing, but I need to know the reason why this page can not be opened.So in this case, I might use grey-box testing.I might, take the URL. open it using postman and see the response. OK, what is the response code, what is the body of teh response.
+
+
+
+## :100:Which test cases are written first black-box or white-box?
+
+black box test cases are written first and white box test cases later.
+
+A black box test case does not need functional design of the application.Check everything according to the test cases, is the developer missed some condition in the requirements or not? 
+
+White box testing is when we have access to the code and we are testing it. 
+
+
+
+##:100:What is use-case testing?
+
+It is one of the black-box testing techniques. It help us in identifying all the test cases in the whole system from start to end.For example, about an online e-commerce purchase might include adding an item to the cart, selecting a payment type and choosing a shipping and delivery option.
+
+
+
+##:100:Equivalence partitioning & Boundary-value analysis
+
+We have five major black box test techniques.
+
+- Equivalent partitioning
+
+- Boundary-value analysis
+
+- Decision table
+
+- State transition testing
+
+- Use case testing
+
+==If we have several test cases and time contraints do not allow us to execute them all, then we use techniques like BVA and ECP to reduce the number of test cases.==
+
+If we test this password field,which can accept letter from a-z, A-Z and numericals 1-9.So total=26+26+9+some test cases for invalid values=more than 60 test cases to just check a password field.
+
+we divide our input range in to equivalence classes.
+
+1. Digits smaller than 1
+   (Invalid values)
+
+2. digits 1-9
+   (valid values)
+
+3. digits greater than 9
+   (invalid values)
+
+4. characters smaller than A and greater than 9
+
+   (invalid values)
+
+5. Characters A-Z
+   (valid values)
+
+6. greater than  Z and smaller than a
+
+   (invalid values)
+
+7. a-z
+   valid values
+
+8. greater than z(small)
+   (invalid values)
+
+So input is divided into 8 classes conisisting of valid and invalid values. Now the logic is that instead of checking each value, we will pick one value from each class and check our password field with that. So following ECP now we have to check only 8 test cases instead of 60+.
+
+In BVA instead of just picking ==any== value from input range we pick following values for testing purpose:
+Example: suppose input range is 1-9 digits. Then following BVA we will use following values for testing:
+1) Value just below the minimum value of range = 0
+2) Minimum Value of range = 1
+3) Value just above minimum range =2
+4) Value just below maximum range= 8
+5) maximum value =9
+6) value just greater than maximum value = 10
+
+
+
+##:100:What is requirements traceability matrix?~什么是需求追溯矩阵？~
+
+Requirements traceability matrix is a document that demonstrate the relationship between requirements and other artifacts.To prove the requirements have been fulfilled.
+
+Bidirectional traceability is the ability to trace forward (e.g., from requirement to test case) and backward (e.g., from test case to requirement).
+
+It makes sure that requirements fulfill original goals, also help quality assurance (QA) team understand what needs to be tested. Traceability is also useful for managing projects. I’ll know how far I’ve progressed. And I’ll be able to manage the scope of requirements.
+
+
+
+##:100:static & Dynamic testing
+
+if I'm testing a code a database, some API , if I am providing input to the system and waiting for output, this is dynamic testing.
+
+On the other hand, static testing does not involve the execution of the component.I am not providing input and waiting for output.
+
+Static testing has two forms. It has the manual examination of the work products like reading the requirements and finding ambiguities or reviewing the code. Or it might be tool driven evaluation of the code, for example, inside the code, if you declared an integer and you didn't give it a value, In this case, the IDE will tell you that it is a warning in this variable without executing the code.
+
+
+
+##:100:What is the test plan?
+
+**what is the information that should be covered in it?**
+
+The test plan is a document which describes test strategy, goals, schedule.
+
+==We also have two types of test plans. Master Test Plan. Phase Test Plan.==
+
+There are the following types of test plans.
+
+1. The main test plan. It is a single, high-level test plan for the project that brings all other test plans together.
+
+2. Test plans for specific test levels (Unit, integrations, systems, acceptance tests)
+
+3. Test plans for particular types of testing (performance, security).
+
+To create a quality test plan, you need to answer the following questions.
+
+1. What exactly are you testing?
+
+It will be the testing area.
+
+2. How are we going to conduct these tests?
+
+We need to clearly explain the testing strategy, what criteria for passing, and what indicators should be considered.
+
+3. What are my desired results?
+
