@@ -958,7 +958,7 @@ Test case: Are derived from test scenarios. Mostly is a document. Test cases con
 
 **How can we prevent defects from being introduced in our project?**
 
-Starting test as early as possible, this helps to reduce the number of defects and the rework cost in the end. Early testing saves time and money. When you review the requirements and the design, if there is any problem, you will prevent this problem from being introduced in the project.
+Starting test as early as possible, this helps to reduce the number of defects and the rework cost in the end. Early testing saves time and money. When I review the requirements and the design, if there is any problem,we needl prevent this problem from being introduced in the project.
 
 
 
@@ -973,13 +973,13 @@ Starting test as early as possible, this helps to reduce the number of defects a
 
 ##:100:What is exploratory testing, why do we use it?
 
-So exploratory testing is an experience based test technique. In our testing process, we begin to learn about software, write test plan and then analyze it, then execute them, but sometimes we ==don't have requirements to analyze==, we ==don't have enough time== to test our software,we use exploratory testing.
+So exploratory testing is an experience based on test technique. In our testing process, we begin to learn about software, write test plan and then analyze it, then execute them, but sometimes we ==don't have requirements to analyze==, we ==don't have enough time== to test our software,we use exploratory testing.
 
 When someone needs to learn about a product or application quickly and provide rapid feedback. It helps review the quality of a product from a user perspective.  
 
 
 
-##:100:A defect which could have been removed during the initial stage is removed in a later stage. How does this affect the cost?
+##:100:A defect which could have been removed during the initial stage but is removed in a later stage. How does this affect the cost?
 
 If we find a defect in requirements, in design, or even in coding, it will not cost a lot.If we find it in testing, it will relatively cheaper to fix it. But if we find it in operation, OK, this means that the customer or the client found the defect after we delivered it to him. In this case, this is a very big problem.
 
@@ -1007,7 +1007,7 @@ Confirmation testing: After the developer fixes this defect, the tester will che
 
 Reviewing the code is static testing, black box testing and white box testing are dynamic testing. (We are providing input and waiting for output. So white box testing is dynamic testing.)
 
-- Grey-box testing: It is a software technique to test a software product. That mixes white box and black box testing. If I am opening a page in a website and this page doesn't show up, I am performing black-box testing, but I need to know the reason why this page can not be opened.So in this case, I might use grey-box testing.I might, take the URL. open it using postman and see the response. OK, what is the response code, what is the body of teh response.
+- Grey-box testing: It is a software technique to test a software product. That mixes white box and black box testing. If I am opening a page in a website and this page doesn't show up, but I need to know the reason why this page can not be opened.So in this case, I might use grey-box testing.I might, take the URL. open it using postman and see the response. OK, what is the response code, what is the body of the response.So here I am performing black-box testing, but I also used a white-box technique which is API testing.
 
 
 
@@ -1112,8 +1112,6 @@ Static testing has two forms. It has the manual examination of the work products
 
 The test plan is a document which describes test strategy, goals, schedule.
 
-==We also have two types of test plans. Master Test Plan. Phase Test Plan.==
-
 There are the following types of test plans.
 
 1. The main test plan. It is a single, high-level test plan for the project that brings all other test plans together.
@@ -1132,5 +1130,360 @@ It will be the testing area.
 
 We need to clearly explain the testing strategy, what criteria for passing, and what indicators should be considered.
 
-3. What are my desired results?
+3. What are my desired results
 
+
+
+
+
+##:100:test progress report & test summary report?
+
+Write a test progress report to the stakeholders,on a daily basis or a weekly basis, 
+
+The content of the test progress report is mostly three things:
+
+1. What we have done in the previous testing period.
+2. What we are going to test in the next period.
+3. The status of the test object that we are testing.
+
+when finish system testing, means we finished with this phase of testing.In this case, you will begin to write test summary report.
+
+
+
+
+
+##:100:Which mistakes do testers tend to do?
+
+1. Failure to communicate
+
+   If you are not good at communicating with the stakeholders, with developers, with a product owner, with any other team member, this is a very big problem.
+
+2. Being afraid of asking questions
+
+   What is expected behavior of this function and so on. If you are too afraid to ask questions and you are just making assumptions about how the software should work, this is not a good thing.
+
+3. Begin testing before understanding the scope and requirements 
+
+   Before executing test cases, before designing test cases, we should analyze all the work products that I have understand them well in order to go in a good way in the testing process.
+
+4. Writing poor defect reports 
+
+    it would waste a lot of time, the developer mostly will not understand what you are talking about.
+
+5. Missing some requirements while writing test cases 
+
+   we need requirements traceability matrix in order to make sure that all
+
+   requirements are covered with test cases.
+
+6. Not having any type of planning 
+
+   Which is Monkey testing or ad hoc testing means we don't plan anything, just open the application or open the website and go in it like any other user.
+
+7. ==False positive & False negative==
+
+False positive happens when you report a defect which is not a defect.
+
+For example, Test the Log in functionality, the Internet connection dropped. In this case, there is nothing wrong with the Log in functionality, but the problem is Internet
+
+connection. So in this case, the defect that you reported is not correct.
+
+ False negative: there is a defect in some component. But you didn't test this component or this scenario, in this case, you reported that there is no defects in this component.
+
+
+
+##:smile:If you reported a defect to a developer and he rejected it, what shall you do?
+
+• Communicate with him 
+
+If he's not convinced, try to show him an example. For example, this is a log in form, show him another application that contains a similar functionality and tell him, this is how they are applying this functionality we need to be like them because this is the correct way.
+
+• Return to the work products (SRS-Product Backlog) 
+
+If this functionality or this behavior is documented in the SRS or the product backlog, just refer to it and show it to the developer.
+
+• Ask the product owner 
+
+This happens when there is no documentation of this functionality. Ask him how do you want this functionality to be performed?
+
+• Check the test environment 
+
+That might be a problem in my test environment or the developer test environment.
+
+If this is an Android application, I might be testing on Android 8 and he is developing and testing using Android 10. We need to make sure that there is no problem with my environment or the developers environment. 
+
+• Escalate the issue 
+
+Escalate the issues to the managers if this developer is repeating this behavior
+
+a lot.
+
+• Accept that it is not a defect
+
+
+
+##:smile:What are the most important components of a ==defect report==?
+
+1.Title 
+
+The first is the title and the title should be simple and should be descriptive. For example, don't say Login doesn't work, should say the Login Submit Button
+
+doesn't work or isn't clickable in this way. More specific.
+
+2.Steps to reproduce 
+
+​	Provide steps,necessary data to reproduce that defect.
+
+3.Expected result 
+
+4.Actual result 
+
+Provide expected result and the actual.
+
+5.Priority 
+
+ Provide the priority of the defect is a high priority, medium or low.
+
+6.Screenshot or video
+
+Provide a proof of something that proves that this defect, this thing can be
+
+a screenshot, it can be also a video.
+
+
+
+##:smile:What is risk-based testing?
+
+RBT is a software testing type that is based on the probability of the risk.
+
+We prioritize our test cases based on there risks.~RBT是一种基于风险概率的软件测试类型.我们根据存在的风险对测试用例进行优先排序.~
+
+If a function has a high impact on the software, it will have a higher level of risk
+
+What are the steps that risk-based testing goes through?
+
+1. To identify the risks in your product.
+
+2. Analyze those risks.
+
+3. Prioritize them.
+
+4. To create test cases or a test plan to mitigate~减轻风险~ those risks.
+
+
+
+##:100:alpha testing & beta testing?
+
+alpha testing and beta testing is belong to the acceptance testing which is the last testing level.
+
+For example, if a game is being launched for a PlayStation or even PC, we might perform alpha testing and beta testing before releasing the full version of this game.
+
+- alpha testing, we will invite the users or the stakeholders to our development organization and they will test it under our supervision.
+- beta testing comes after alpha testing. For example, from your home, you download this application and begin to use it as a potential customer. The development organization, get feedback from your use of it. We may have alpha testing and then we have beta testing or we may only have beta testing before releasing software to users.
+
+
+
+
+
+##:100:What are the benefits of test independence?
+
+The tester is independent of the development. ==Depending on the size of my organization and the scope of my project, I will choose to have independent testers or not.==
+
+- If the developer tests his software and the tester test the same software, the tester is more likely to find defects and failures in this software. And this is because of their different backgrounds, technical perspectives and biases.
+
+- The tester will verify this assumption or he will challenge or disprove this assumption made by stakeholders during implementation of the system.
+
+- If you are independent, you will not be afraid to say, the software is bad
+
+  or it includes a lot of defects.
+
+  
+
+**What are the potential drawbacks of test independence?**
+
+- Isolation from the development team. Do not communicate a lot with the development team. And this may lead to a lack of collaboration, delays in providing feedback.
+
+- Developers may lose a sense of responsibility for quality. because he might say,  the tester will begin to test this functionality after me.
+
+
+
+
+
+##:100:test techniques and testing tools?
+
+Test techniques help me in identifying my test cases and test conditions, the test techniques are used in test analysis and test design.
+
+We have a lot of types of test techniques.
+
+- Black box techniques.(equivalence partitioning and boundary value analysis, decision table ,state transition testing and use cases testing)
+
+- White box techniques 
+- Experience based techniques(error guessing and exploratory testing.)
+
+The testing tools mostly are software, they are programs that help me in testing
+
+my software.
+
+Like the Test Management Tools (Google Sheets-Trello-Jira)
+
+![1679547339638](README.assets/1679547339638.png)
+
+
+
+##:100:Random/monkey testing?
+
+ It is a type of testing in which the data is generated randomly, and it is often done using a tool.
+
+For example, I'm testing the login functionality with invalid users, in this case I might use a tool to generate random users or random numbers and I begin to test using them. Because those numbers or those test data are created randomly.
+
+This type of testing is less reliable, the better way of testing is to generate not random data, but data that follows any test technique that I want based on the requirements.
+
+
+
+##:100:negative and positive testing?
+
+For example, I am testing the log-in functionality for positive testing,using a valid username, a valid email and a valid password. So this is positive testing, 
+
+on the other hand, negative testing, using a valid email and the invalid password or using invalid email. So this is negative testing. ==I'm expecting an error.==
+
+==In all my test scenarios, I should include both positive and negative testing.==
+
+
+
+
+
+## :100:Decision table testing?
+
+Decision Table testing,is a black box technique. To test how the system behavior to various input combinations. The multiple input combinations and the corresponding system behavior are tabulated, the decision table is also known as a Cause-Effect table. 
+
+Testing is carried out using decision tables showing the application’s behavior based on different combinations of input values. Decision tables are particularly helpful in designing test cases for complex business scenarios involving verification of application with multiple combinations of input.
+
+
+
+**state transition testing**
+
+It shows how each input leads to a transition and an ultimate output within the system.
+
+example, when you go to an ATM to draw money, you move through various states. These states include entering the correct password to withdrawing a certain amount of money. We would have used state transition testing to test all of the different scenarios. Everything from entering the incorrect and correct PIN, to drawing money or not being able to draw money. Each sequence of possible functions, or each pathway, requires testing before the product can be approved for use.
+
+
+
+##:100:What is the waterfall model?
+
+![1679550587666](README.assets/1679550587666.png)
+
+The Waterfall model is the earliest SDLC approach that  was used for software development.
+
+And the waterfall model illustrates the software development process in a linear, sequential flow.
+
+In the waterfall model, the phases don't overlap. We begin by creating our requirements, then designing our software, then developing it, then testing it, then deploying it to the customer, then performing maintenance activities. In theory,we don't begin to design until we finish writing all the requirements.
+
+That's why the waterfall model is not the best model to use, because it does not follow the principle of testing, which is early testing.
+
+
+
+##:100:What is the v-model?
+
+![1679550607053](README.assets/1679550607053.png)
+
+(Verifivation and Validation model)
+
+The V model is an extension of the waterfall model, because it is based on it. In the v-model, we divided the requirements into two types the user requirements and the technical requirements or the software specifications the design also is divided into two types: the high level design*(HLD provides an overview of an entire system, identifying the main components that would be developed for the product and their interfaces. )* and the low-level design.*(detailing the **HLD**. It defines the actual logic for each and every component of the system.)*
+
+And then we write the code. Then, comes the testing part, in the v-model we have more emphasis on testing. In the waterfall model we had only one step which is called testing. Here we have four levels of testing which are: unit testing, integration testing, system testing. and acceptance testing.
+
+But the difference is that planning and design of the testing activities happen early in
+
+the lifecycle. this means that for every single phase in the development cycle, there is a directly associated testing phase.
+
+
+
+##:100:What are the best practices for writing test cases?
+
+It is a document in which we begin to test our software or begin to design our testing for this software. There are many practices:
+
+- Write test cases with end-users perspective.
+
+  Testing an e-commerce website, I should begin to think about the end user. What are the scenarios that he is going to go through inside this software?
+
+- Write test steps in a simple way.
+
+  We have a field inside the test case, which is called the testing steps.So steps should be clear so that the person who is going to execute the test case can read them and follow them easily.
+
+- Make the test cases reusable.
+
+   	It can be used one time and after changing the password, you can still use it again.
+
+- Set the priority.
+
+  ​	When we execute the test cases, we begin by executing the high priority test cases first, then the low priority test cases.
+
+- Provide a test case description, test data, expected result, precondition, postcondition. 
+
+- Write invalid test cases along with valid test cases 
+
+- Follow proper naming conventions
+
+  Say login with a valid username and a valid password.
+
+- Review the test cases regularly and update them if necessary.
+
+  If the developer added some functionalities,I should review my test cases and begin to edit them. And we call this activity test case refactoring or test case maintenance.
+
+
+
+
+
+##:100:What is the test suite?
+
+Each test case is added to a folder, or to a repository which is called a test suite. So the group of test cases which test the same functionality are called the testing suite.
+
+For example, we have the login functionality test suite. When we are reporting our test status, we say that the login test suite had 100 test cases, 90 of them, passed five failed and five blocked. In this case, I can understand the status of this functionality or this module.
+
+Any test case can be added to multiple test suites. For example, we might have a test suite for login with Facebook and a test suite for forgot password. So forget password functionality or test case might be added to both of the test suites for Facebook.
+
+
+
+##:100:What is the test environment?
+
+Test environment supports test execution with three things hardware, software and network. For example, I designed a test case for the login functionality. This test case is going to be executed. I'm going to executed on Windows 10 and using Wi-Fi network using Google Chrome browser. So this is my testing environment.
+
+Another tester is going to execute the same test case on Android 10 using mobile data. So this is another test environment for the same test case.
+
+![1679553092303](README.assets/1679553092303.png)
+
+
+
+
+
+
+
+##:100:build and release?
+
+If the developer delivers you a file or a program so that you can test it, this is called a build, this can be an Android application or an IOS version or a link to a website. So this build is expected to have defects. My goal is to find those defects for the developer to solve them, once the applicationbecomes stable and ready for the end user. It's released in the market so the build is not released to the market.
+
+Aat the beginning we have a build, this build is going through many testing cycles. After it is approved, we call it release and we release it to the end user. So anything that is released to the end user is called a release. The release can also include defects. But those defects are not critical of the application can still be used while they are present.
+
+==if it is released to the testing team, this is called a build.==
+
+
+
+
+
+##:100:What is the test data?
+
+The test data is the data that is used by the testers to run the test cases.
+
+For example, if we are executing a test case to login with a valid user name. So this valid user name or this valid email is considered as test data. Also, for example, if I'm using a dummy credit card information in order to test a functionality. So this dummy information is also called test data.
+
+
+
+#:100:quality control and quality assurance?
+
+![1679553786350](README.assets/1679553786350.png)
+
+We have quality management.
+
+Inside quality management. We have something that's called quality assurance and quality assurance cares about the ==process.== The focus is more on adherence~遵守~ to proper process, and prevention. Make sure and provide a confidence that the product or the service does not go wrong.  Typical examples are contract reviews, design reviews, calibration~校准~ of monitoring and measuring equipments ,
+
+Inside quality assurance. We have quality control, which is considered as a part of quality assurance.  QC checks whether quality requirements are met or not.
