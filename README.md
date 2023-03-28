@@ -1388,7 +1388,7 @@ That's why the waterfall model is not the best model to use, because it does not
 
 (Verifivation and Validation model)
 
-The V model is an extension of the waterfall model, because it is based on it. In the v-model, we divided the requirements into two types the user requirements and the technical requirements or the software specifications the design also is divided into two types: the high level design*(HLD provides an overview of an entire system, identifying the main components that would be developed for the product and their interfaces. )* and the low-level design.*(detailing the **HLD**. It defines the actual logic for each and every component of the system.)*
+The V model is an extension of the waterfall model, because it is based on it. In the v-model, we divided the requirements into two types the user requirements and the technical requirements or the software specifications the design also is divided into two types: the high level design*(HLD provides an overview of an entire system, identifying the main components that would be developed for the product and their interfaces. )* and the low-level design.*(detailing the **LLD**. It defines the actual logic for each and every component of the system.)*
 
 And then we write the code. Then, comes the testing part, in the v-model we have more emphasis on testing. In the waterfall model we had only one step which is called testing. Here we have four levels of testing which are: unit testing, integration testing, system testing. and acceptance testing.
 
@@ -1460,9 +1460,9 @@ Another tester is going to execute the same test case on Android 10 using mobile
 
 ##:100:build and release?
 
-If the developer delivers you a file or a program so that you can test it, this is called a build, this can be an Android application or an IOS version or a link to a website. So this build is expected to have defects. My goal is to find those defects for the developer to solve them, once the applicationbecomes stable and ready for the end user. It's released in the market so the build is not released to the market.
+If the developer delivers you a file or a program so that you can test it, this is called a build, this can be an Android application or an IOS version or a link to a website. So this build is expected to have defects. My goal is to find those defects for the developer to solve them, once the application becomes stable and ready for the end user. It's released in the market so the build is not released to the market.
 
-Aat the beginning we have a build, this build is going through many testing cycles. After it is approved, we call it release and we release it to the end user. So anything that is released to the end user is called a release. The release can also include defects. But those defects are not critical of the application can still be used while they are present.
+At the beginning we have a build, this build is going through many testing cycles. After it is approved, we call it release and we release it to the end user. So anything that is released to the end user is called a release. The release can also include defects. But those defects are not critical of the application can still be used while they are present.
 
 ==if it is released to the testing team, this is called a build.==
 
@@ -1484,6 +1484,144 @@ For example, if we are executing a test case to login with a valid user name. So
 
 We have quality management.
 
-Inside quality management. We have something that's called quality assurance and quality assurance cares about the ==process.== The focus is more on adherence~遵守~ to proper process, and prevention. Make sure and provide a confidence that the product or the service does not go wrong.  Typical examples are contract reviews, design reviews, calibration~校准~ of monitoring and measuring equipments ,
+Inside quality management. We have something that's called quality assurance and quality assurance cares about the ==process.== The focus is more on adherence~遵守~ to proper process, and prevention. Make sure and provide a confidence that the product or the service does not go wrong.  Typical examples are contract reviews, design reviews, calibration~校准~ of monitoring and measuring equipments .
 
 Inside quality assurance. We have quality control, which is considered as a part of quality assurance.  QC checks whether quality requirements are met or not.
+
+
+
+
+
+--------------------------
+
+# Agile & Agile Testing
+
+The sequential software development: Each step of the project is done sequentially, finish requirements analysis then design then implementation then testing.
+
+In Agile the project is divided into small iterations, you might apply the whole test process more than one time inside the same project. 
+
+
+
+##why do we need Agile Lifecycles?
+
+This is because of something that's called cone of uncertainty.
+
+At the beginning of the project, the uncertainty is large. We can not certain of the results. There are many risks, and we shouldn't spend a lot of money. If we spend a lot of money at the beginning of the project,  the project might fail and you don't get any revenue.
+
+But while the project is progressing, the uncertainty increases, In this case, we can spend a lot of money, So one of the important techniques in Agile is dividing a big project, which is like one year or six months to small iterations. Each one of them is one week or two weeks.
+
+Because in the iterations at the beginning of the project, we do not spend a lot of money. We create prototypes, small projects. While we don't have high amount or high percentage of certainty, we also don't make big promises.
+
+And while the project progresses iteration after the other, we begin to spend money and make promises.
+
+
+
+## Agile 4 values
+
+1. Individuals and interactions are more important than processes and tools. The interactions between the team members and the relationship between them is more important than the process or the tools that are used inside the company.
+2. Working software over comprehensive documentation. Agile says the most important thing is that we have a piece of working software. Also, developers write some code that will give us a working software to the customer is over the documentation. So in any project in software lifecycle, we begin by writing the user requirements or the SRS software requirements specification, and we sign it with the user so that we make sure that these are the things that we agree on.
+3. Customer collaboration over contract negotiation. If we have a contract with the customer, and the customer told us, I need to change some of these functionalities.  In this case, we should not say, no,we have a contract.  We must collaborate with the customer and try to make sure that he is satisfied with the software that he gets.
+4. Responding to change over following a plan. The more important than following a plan is responding to change. So change happens a lot in agile projects. So in this case, if a change happens, we welcome it.
+
+
+
+## Agile 12 principles
+
+1. To satisfy the customer early and continuous delivery of valuable software. The highest priority in any agile project is customer satisfaction is to make the customer satisfied. How? by early and continuous delivery.FE, each week, each two weeks, depending on the lifecycle that we will use, we give the customer a valuable software.
+2. Deliver working software frequently. In order to make the customer satisfied, you must deliver working software to him frequently.FE, each week, each two weeks, depending on the lifecycle that we will use, we give the customer a valuable software.
+3. Working software is a primary measure of progress. It might have some defects and might not have all the functionalities,but at least it has some functionality that we can get feedback from customer based on them.
+4. Welcome changing requirements. we welcome this because customer collaboration is important.
+5. Continuous attention to technical enhances agility. In order to be successful in agile projects in a very fast paced environment.Writing a well-organized code facilities implementing any changes required by the client.
+6. Agile processes promote sustainable development. The whole team must have the same knowledge about the project. For example, or if one of us, the tester or any other person is very slow, we will help him until we all have a constant pace.
+7. Simplicity. Any work product or any activity that will not give me a value inside the project, I will not do it.
+8. Build projects around motivated individuals. You must choose your team wisely.
+9.  The best architectures,requirements and designs emerge from self-organizing teams.We, as a team as a whole team decide what is going to be done today, next day and if we have any problem, we as a whole team decide what should we do to phase this problem.
+10. Business people and developers must work together daily throughout the project.
+11. Face to face conversation. Anything that can be done by face-to-face conversation should be done by face-to-face conversation, not through emails.
+12. Have at regular intervals. what are the good things that we did in the previous period? What are the things that we need to stop doing? what are the things that we haven't done? And what we should begin doing from the next iteration?
+
+
+
+## Waterfall vs Agile development models
+
+==The main differentiate is requirement, resources and time.==
+
+In most waterfall projects, we have fixed requirements and estimated time and resources. For example, we have an idea, We write all the requirements for it. Then we say, how much time does this requirement need? how much resources and effort do they need?
+
+In Agile, the requirements are not fixed. The resources and the time is fixed. We need this product to be delivered within three months. Then we estimate the features. 
+
+
+
+
+
+## Whole-Team Approach
+
+Which means the whole team is responsible for everything. 
+
+• Involve everyone necessary to ensure success.
+
+We involve the product owner or the business representative, and the tester and the developer to discuss as a team.
+
+• Small team (from 3 to 9)
+
+So the ideal agile team if we are applying the whole team approach consists of 3 to 9 people.
+
+• Team is Co-located 
+
+The whole team shares the same space, the same area. They are all inside the same workstation.
+
+• Quality is everyone’s responsibility
+
+
+
+### Tester's role in whole-team approach
+
+- To support and collaborate with the business representative. To help them create suitable acceptance tests.
+
+- Work with developers to agree on the testing strategy and decide the test automation approach. we will not decide the automation framework or the testing strategy alone.
+- Transfer and extend testing knowledge to other team members. You will sit with the developer and tell him about the testing techniques.
+
+
+
+### Power of three
+
+The power of three means that the concept of involving testers, developers, and business representatives in all feature discussions. when we are going to discuss any feature, those three persons must be present, and each one of them must give us his opinion and his feedback on how this feature should be designed, developed, and tested.
+
+
+
+## User Story Definition
+
+The user story is a requirement, user stories are written to capture requirements from the perspectives of developers, testers and business representatives.
+
+
+
+--------------
+
+
+
+# Scrum
+
+We have three main roles in the Scrum Team, which are the product owner, the Scrum Master (So this person understands Scrum very well and he makes sure that our team  applying Scrum in a correct way.) and the development team.
+
+
+
+## Scrum practices
+
+### Sprint
+
+Scrum divides a project into iterations (called sprints) of fixed length (usually two to four weeks). This ability to inspect and adapt is the most critical goal of a sprint that allows the team to inspect the product increment iteratively and also improve how they work together as a team.~这种检查和适应的能力是冲刺最关键的目标，它允许团队迭代地检查产品增量，并改进他们作为团队的合作方式。~
+
+
+
+### Product Increment
+
+We build something, we measure its quality and get feedback from the customer. We learn new things and then build a new functionality or a new build. This new build is called a product increment.
+
+
+
+## Product Backlog
+
+
+
+
+
