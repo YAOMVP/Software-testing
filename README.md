@@ -1619,9 +1619,141 @@ We build something, we measure its quality and get feedback from the customer. W
 
 
 
-## Product Backlog
+-------
+
+
+
+# JIRA
+
+##COMPONENTS
+
+The main parts of project, divide the project into some components.
+
+![1680404994922](README.assets/1680404994922.png)
+
+
+
+![1680406848997](README.assets/1680406848997.png)
+
+
+
+## EPICS
+
+The Epics are the main functionalities that need to be developed.
+
+![1680405098403](README.assets/1680405098403.png)
+
+
+
+![1680406956084](README.assets/1680406956084.png)
 
 
 
 
 
+## USER STORIES
+
+Is the functionality that I need to develop and test is written in the form of.
+
+**Inside the login**
+
+![1680405285907](README.assets/1680405285907.png)
+
+  
+
+![1680411136176](README.assets/1680411136176.png)
+
+
+
+![1680411211871](README.assets/1680411211871.png)
+
+
+
+### Acceptance criteria
+
+==Like conditions that must be met in order for the user story to be done.==
+
+DOD: Defination of done.
+
+we should specify all this information through **2** ways
+
+
+
+*User story: as a user, I should be able to log in  using phone numbers.*
+
+ **1).check list based** 
+
+1.  A place holder appears in phone number field.
+2. Users can change country code from the list of countries.
+3. OTB button is disabled as long as users didn't enter a valid phone number.
+4. Phone number field should accept only numeric digits.
+5. Users can only enter valid number of digits in phone number field, which is relevant to the country.
+
+
+
+ **2).scenario based**
+
+BDD ->behavior driven development.(jerkin format.)
+
+Given: some initial state ->for example, users enter a valid phone numbers. 
+
+Given: some initial state ->for example, users enter an invalid phone numbers. 
+
+
+
+When: user does some action ->for example, user taps on send OTP button.
+
+When: user does some action ->for example, user taps on send OTP button,the button is disabled.
+
+
+
+Then: system responds with specific action ->for example, an OTP is sent to the user and he can use it to login to the app.
+
+
+
+
+
+*In Uber, I can search for a location,or a destination. As a rider, I want to use a search field to type a city.*
+
+1).check list based:
+
+1. The search field appears.
+2. Fields has a placeholder can enter the destination.
+3.  Placeholder disappears once users begins typing.
+4. Search is multi lingual, all support language of the application.
+5. Users can't type more than 140 characters.
+6. Special characters are not support.
+
+
+
+*User story: As a user, I want to be able to recover my passwords, so that I can access my account in case I forgot the password.*
+
+2).scenario based:
+
+Given: user navigates to Login page.
+
+When: user clicks on forgot password button and enter a valid email to receive the link.
+
+Then: System sends the link to the entered the email.
+
+
+
+
+
+## TASKS & SUBTASKS
+
+**In the first user story, which is login using phone number, you can have an arrow here and say that we have a task**
+
+![1680405489317](README.assets/1680405489317.png)
+
+
+
+
+
+## Release/version   vs   Build
+
+Build:Is a software that is executable and can be run on a computer. The build is still in testing or under test. The build goes from the development team to the QA team for testing.
+
+Version:That is developed, but it's going to be shipped to users or client. Version mostly is ready for deployment. But the release or version is handed over from the QA team to the client or the customer or the end user.
+
+so we begin by builds and after a period of time, those builds are converted into releases or versions.
